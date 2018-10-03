@@ -16,7 +16,8 @@ Die-hard command-line developers can use Maven directly by calling `mvn`
 in the project root.
 
 However you build the project, in the end you will have the `.jar` file
-(called *artifact* in Maven speak) in the `target/` subdirectory.
+(called *artifact* in Maven speak) in the `target/` subdirectory. 
+The good file is the file with dependencies.
 
 
 
