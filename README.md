@@ -7,4 +7,4 @@ Optimal Multivariate Gaussian Fitting for PSF Modeling in Two-Photon Microscopy.
 
 Please quote this article when using this plugin.
  
-To use the plugin : download ImageJ or Fiji from their website, and put the .jar file of the plugin in the "plugin" folder of ImageJ/Fiji. The plugin will then appear in the "plugin" menu of the program. Open the image file you want to process (the image needs to be in shades of grey), and click on the "FIGARO" button. A PDF report will be automatically generated. Take note that process can take a while (from a few minutes to more than an hour depending on the computer and the image). 
+To use the plugin : download ImageJ or Fiji from their website, and put the FIGARO__-1.0.jar file of the plugin in the "plugin" folder of ImageJ/Fiji. The plugin will then appear in the "plugin" menu of the program. Open the image file you want to process (the image needs to be in shades of grey), and click on the "FIGARO" button. A PDF report will be automatically generated. Take note that process can take a while (from a few minutes to more than an hour depending on the computer and the image). 
