@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>14.0.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>com.mycompany</groupId>
+	<artifactId>FIGARO_</artifactId>
+	<version>1.0</version>
+
+	<name>FIGARO</name>
+	<description>Fitting Gaussians with Proximal Optimization</description>
+	<url>http://www.centralesupelec.fr/fr/centre-de-vision-numerique-cvn</url>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>Centre de Vision Numérique</name>
+		<url>http://www.centralesupelec.fr/fr/centre-de-vision-numerique-cvn</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Alexis Lauret</name>
+			<roles>
+				<role>developer</role>
+				<role>debugger</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Emilie Chouzenoux</name>
+		</contributor>
+		<contributor>
+			<name>Claire Lefort</name>
+		</contributor>
+		<contributor>
+			<name>Tsz Kit Lau</name>
+		</contributor>
+		<contributor>
+			<name>Jean-Christophe Pesquet</name>
+		</contributor>
+	</contributors>
+	<build>
+  	    <plugins>
+    		<plugin>
+      			<artifactId>maven-assembly-plugin</artifactId>
+      			<configuration>
+        			<archive>
+          				<manifest>
+            				<mainClass>fully.qualified.MainClass</mainClass>
+          				</manifest>
+        			</archive>
+        			<descriptorRefs>
+          				<descriptorRef>jar-with-dependencies</descriptorRef>
+        			</descriptorRefs>
+      			</configuration>
+    		</plugin>
+  		</plugins>
+	</build>
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/AlexisLauret/FIGARO</connection>
+		<developerConnection>scm:git:git@github.com/AlexisLauret/FIGARO</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/AlexisLauret/FIGARO</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/AlexisLauret/FIGARO/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>com.mycompany.imagej</package-name>
+		<main-class>com.mycompany.imagej.FIGARO_</main-class>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
+	</properties>
+	
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+   			<groupId>gov.nist.math</groupId>
+    		<artifactId>jama</artifactId>
+    		</dependency>
+		<dependency>
+    		<groupId>com.itextpdf</groupId>
+    		<artifactId>kernel</artifactId>
+    		<version>7.0.0</version>
+		</dependency>
+		<dependency>
+    		<groupId>com.itextpdf</groupId>
+    		<artifactId>layout</artifactId>
+    		<version>7.0.0</version>
+		</dependency>
+		<dependency>
+    		<groupId>com.itextpdf</groupId>
+    		<artifactId>io</artifactId>
+    		<version>7.0.0</version>
+		</dependency>
+		<dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-log4j12</artifactId>
+        	<version>1.7.18</version>
+    	</dependency>
+	</dependencies>
+</project>
