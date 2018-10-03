@@ -17,7 +17,7 @@ in the project root.
 
 However you build the project, in the end you will have the `.jar` file
 (called *artifact* in Maven speak) in the `target/` subdirectory. 
-The good file is the file with dependencies.
+The right file is the file with dependencies.
 
 
 
